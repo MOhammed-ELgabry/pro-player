@@ -18,7 +18,7 @@ export default function HeroContent() {
           </h1>
         </div>
 
-        {/* أزرار Login و Register */}
+       
         <div className="flex gap-4 lg:ms-28 items-center justify-center p-5">
           <button
             onClick={logIn}
