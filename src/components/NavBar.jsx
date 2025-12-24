@@ -5,7 +5,7 @@ import logo from "../assets/image/WhatsApp_Image_2025-12-10_at_10.41.52_AM-remov
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [search, setSearch] = useState("");
-
+// انا لسه خنا هظبط الن navigate  
   return (
     <nav className="absolute top-0 left-0 w-full z-50 bg-transparent">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -50,9 +50,10 @@ export default function NavBar() {
           ☰
         </button>
       </div>
-
+      
      
       {menuOpen && (
+        // هنا عايز اشغل filter  بلاسم او بالسن او المركز متنساش
         <div className="lg:hidden bg-black/80 text-white px-6 py-4 flex flex-col gap-4">
           <input
             type="text"

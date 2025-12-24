@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { FaEye, FaStar } from "react-icons/fa6";
 import cardImg from "../assets/image/9805bd3eac3689e1689aa31597735d31fb272fbf.jpg";
+import { RiArrowRightUpBoxLine, RiArrowRightUpLine } from "react-icons/ri";
 
 const PlayersGrid = ({ viewPlayer, setViewPlayer, realPlayer }) => {
- 
+ // انا لسه هعمل هنا البيانات تيجي من التوكين وهستخدم زوستاند 
   useEffect(() => {
     if (!realPlayer) return;
 
@@ -52,10 +53,15 @@ const PlayersGrid = ({ viewPlayer, setViewPlayer, realPlayer }) => {
               {player.isDummy ? "Waiting for player" : "View player profile"}
             </p>
           </div>
+           
         </div>
+        
+       
       ))}
+      
+      <div className=" w-full p-3"><button className="btn px-8 py-6 text-white rounded-2xl shadow bg-green-500 text-2xl">See More <RiArrowRightUpBoxLine className="text-white text-3xl" /></button></div>
     </div>
   );
 };
-
+// متنساش الزرار ده عايزه يوديني علي صفحه عرض لعيبه وعايز اعمل فيها pagination
 export default PlayersGrid;

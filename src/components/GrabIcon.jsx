@@ -3,7 +3,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-
+// هنا انا عايز اغير الصفحه دي كلها واعمل مودال يفتح يظهر فيه وكلاء اللعيبه 
 export default function GrabIcon({ text = "Grab the chance", link = "/" }) {
   const navigate = useNavigate();
 

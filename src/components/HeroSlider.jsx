@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 export default function HeroSlider({ slides }) {
+
+  // انا لسه هنا عايز اظبط الصور متنساش
   const domain = "http://localhost:1337"; // لو الصور من Strapi
 
   if (!slides || slides.length === 0) return null;
