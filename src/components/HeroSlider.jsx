@@ -26,7 +26,7 @@ export default function HeroSlider({ slides }) {
           return (
             <SwiperSlide key={`${el.id}-${i}`}>
               <div
-                className="w-full min-h-screen bg-cover bg-center relative"
+                className="w-full min-h-screen object-cover bg-cover bg-center relative"
                 style={{ backgroundImage: `url(${bgUrl})` }}
               >
                 <div className="absolute inset-0 bg-black/40"></div>
